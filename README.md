@@ -37,11 +37,10 @@ For detailed content and book borrowing related functions, you can click `View D
 ### Loan
 >
 ![已借用書籍頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/319b76ff-0491-4e3a-8cea-332cf938a102)
-
 ![書籍歸還以及延長時間彈跳視窗](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/9faf44e9-fefc-483b-90bf-7b5fa00d0c0b)
-
 ![書籍借用以及歸還歷史紀錄](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/f43148b5-863f-46d1-afef-30a21b92c0d8)
 
+### Pay
 ![延遲付款頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/b82d0bfb-1816-48cf-8aee-11faa5261393)
 
 ![管理員新增書籍頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/dcdc2d35-6c90-4d44-8063-a8f57078d626)
