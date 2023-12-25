@@ -27,10 +27,11 @@ For detailed content and book borrowing related functions, you can click `View D
 ![書籍介紹以及借用頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/ce6774d2-8e0d-4d20-83fc-e8ede5e12614)
 
 ### Message
->`Message` function page: users can ask questions to the administrator,
+>"Message" function page: Users can ask questions to the administrator and fill in the question title and details (this function is only available to users who have logged in and verified)
+>
+>Users can also view question records in Q/A Response/Pending, which lists each question information and the administrator's response.
 
 ![提問頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/d166c1f3-49b5-459c-b215-1662596ab967)
-
 ![提問進度確認頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/5d24c20e-db7a-4180-9ece-6e8f8174bc9e)
 
 ![已借用書籍頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/319b76ff-0491-4e3a-8cea-332cf938a102)
