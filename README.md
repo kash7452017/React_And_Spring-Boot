@@ -35,7 +35,9 @@ For detailed content and book borrowing related functions, you can click `View D
 ![提問進度確認頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/5d24c20e-db7a-4180-9ece-6e8f8174bc9e)
 
 ### Loan
+>On the book borrowing page, all books that have been borrowed are listed. At the same time, return and re-borrow functions are provided for each book. Please note that the re-borrow function must be within the specified return time, otherwise the function will be disabled.
 >
+>In addition, you can also view all the books that have been borrowed and returned in the history record. The details include the book picture, name, author, borrowing time and return time.
 ![已借用書籍頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/319b76ff-0491-4e3a-8cea-332cf938a102)
 ![書籍歸還以及延長時間彈跳視窗](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/9faf44e9-fefc-483b-90bf-7b5fa00d0c0b)
 ![書籍借用以及歸還歷史紀錄](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/f43148b5-863f-46d1-afef-30a21b92c0d8)
@@ -43,6 +45,8 @@ For detailed content and book borrowing related functions, you can click `View D
 ### Pay
 ![延遲付款頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/b82d0bfb-1816-48cf-8aee-11faa5261393)
 
+### Administrator management functions
+>
 ![管理員新增書籍頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/dcdc2d35-6c90-4d44-8063-a8f57078d626)
 
 ![管理員修改書籍頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/5b02a992-0053-4e57-b6b9-c4ab8795e68d)
