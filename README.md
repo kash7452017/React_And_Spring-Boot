@@ -43,12 +43,18 @@ For detailed content and book borrowing related functions, you can click `View D
 ![書籍借用以及歸還歷史紀錄](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/f43148b5-863f-46d1-afef-30a21b92c0d8)
 
 ### Pay
+>You can check the current unpaid amount on the "Pay fees" page. This amount is the accumulated amount due to overdue book borrowing and is not returned. It will be calculated by itself in the internal system. The payment method is through credit card.
 ![延遲付款頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/b82d0bfb-1816-48cf-8aee-11faa5261393)
 
-### Administrator management functions
->
+### Administrator management
+>Add new books: Only administrators can enter this page. Administrators can add new book information. All the fields below need to be filled in, including book title, author, category, content introduction, quantity and pictures.
+
 ![管理員新增書籍頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/dcdc2d35-6c90-4d44-8063-a8f57078d626)
 
+>Book editing: Administrator rights can modify the number of books on this page. There are buttons to increase or decrease the number, or the function of deleting books. This function is only available to administrators.
+
 ![管理員修改書籍頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/5b02a992-0053-4e57-b6b9-c4ab8795e68d)
+
+>Q&A responses: All customer feedback questions are listed on this page, and administrators can respond to them uniformly on this page.
 
 ![管理員回覆提問頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/65f32585-5e2b-400d-a548-3021ebb9fd03)
