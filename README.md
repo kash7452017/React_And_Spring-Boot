@@ -27,7 +27,7 @@ For detailed content and book borrowing related functions, you can click `View D
 ![書籍介紹以及借用頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/ce6774d2-8e0d-4d20-83fc-e8ede5e12614)
 
 ### Message
->"Message" function page: Users can ask questions to the administrator and fill in the question title and details (this function is only available to users who have logged in and verified)
+>`Message` function page: Users can ask questions to the administrator and fill in the question title and details (this function is only available to users who have logged in and verified)
 >
 >Users can also view question records in Q/A Response/Pending, which lists each question information and the administrator's response.
 
@@ -35,26 +35,28 @@ For detailed content and book borrowing related functions, you can click `View D
 ![提問進度確認頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/5d24c20e-db7a-4180-9ece-6e8f8174bc9e)
 
 ### Loan
->On the book borrowing page, all books that have been borrowed are listed. At the same time, return and re-borrow functions are provided for each book. Please note that the re-borrow function must be within the specified return time, otherwise the function will be disabled.
+>On the `Loan` page, all books that have been borrowed are listed. At the same time, return and re-borrow functions are provided for each book. Please note that the re-borrow function must be within the specified return time, otherwise the function will be disabled.
 >
 >In addition, you can also view all the books that have been borrowed and returned in the history record. The details include the book picture, name, author, borrowing time and return time.
+
 ![已借用書籍頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/319b76ff-0491-4e3a-8cea-332cf938a102)
 ![書籍歸還以及延長時間彈跳視窗](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/9faf44e9-fefc-483b-90bf-7b5fa00d0c0b)
 ![書籍借用以及歸還歷史紀錄](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/f43148b5-863f-46d1-afef-30a21b92c0d8)
 
 ### Pay
->You can check the current unpaid amount on the "Pay fees" page. This amount is the accumulated amount due to overdue book borrowing and is not returned. It will be calculated by itself in the internal system. The payment method is through credit card.
+>You can check the current unpaid amount on the `Pay fees` page. This amount is the accumulated amount due to overdue book borrowing and is not returned. It will be calculated by itself in the internal system. The payment method is through credit card.
+>
 ![延遲付款頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/b82d0bfb-1816-48cf-8aee-11faa5261393)
 
 ### Administrator management
->Add new books: Only administrators can enter this page. Administrators can add new book information. All the fields below need to be filled in, including book title, author, category, content introduction, quantity and pictures.
+>`Add new books`: Only administrators can enter this page. Administrators can add new book information. All the fields below need to be filled in, including book title, author, category, content introduction, quantity and pictures.
 
 ![管理員新增書籍頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/dcdc2d35-6c90-4d44-8063-a8f57078d626)
 
->Book editing: Administrator rights can modify the number of books on this page. There are buttons to increase or decrease the number, or the function of deleting books. This function is only available to administrators.
+>`Book editing`: Administrator rights can modify the number of books on this page. There are buttons to increase or decrease the number, or the function of deleting books. This function is only available to administrators.
 
 ![管理員修改書籍頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/5b02a992-0053-4e57-b6b9-c4ab8795e68d)
 
->Q&A responses: All customer feedback questions are listed on this page, and administrators can respond to them uniformly on this page.
+>`Q&A responses`: All customer feedback questions are listed on this page, and administrators can respond to them uniformly on this page.
 
 ![管理員回覆提問頁面](https://github.com/kash7452017/React_And_Spring-Boot/assets/101872264/65f32585-5e2b-400d-a548-3021ebb9fd03)
