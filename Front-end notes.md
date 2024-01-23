@@ -259,9 +259,9 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 ```
 ### 按鈕(Button)
 [https://bootstrap5.hexschool.com/docs/5.0/components/buttons/](https://bootstrap5.hexschool.com/docs/5.0/components/buttons/)
->
+
 [https://www.runoob.com/bootstrap/bootstrap-buttons.html](https://www.runoob.com/bootstrap/bootstrap-buttons.html)
->```
+```
 			<button type="button" class="btn btn-primary">Primary</button> // 基本(藍) 
 			<button type="button" class="btn btn-secondary">Secondary</button>	// 次要(灰)
 			<button type="button" class="btn btn-success">Success</button>	// 成功(綠)
@@ -271,20 +271,21 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 			<button type="button" class="btn btn-light">Light</button>	// 光(白)
 			<button type="button" class="btn btn-dark">Dark</button>	// 黑暗(黑)
 			<button type="button" class="btn btn-link">Link</button>	// 鏈結(藍字底線)
->```
->#### Outline 按鈕樣式
->```
-// 用 .btn-outline-* 替換預設修飾用的 Class，以移除任何按鈕上的所有背景色及背景圖。
-<button type="button" class="btn btn-outline-primary">Primary</button> 
-// 語法與填滿相同，只是多了-outline
->```
->
-> #### 尺寸 按鈕樣式
->```
+```
+
+#### Outline 按鈕樣式
+```
+	// 用 .btn-outline-* 替換預設修飾用的 Class，以移除任何按鈕上的所有背景色及背景圖。
+	<button type="button" class="btn btn-outline-primary">Primary</button> 
+	// 語法與填滿相同，只是多了-outline
+```
+
+#### 尺寸 按鈕樣式
+```
 // 想要較大或較小的按鈕？加入 .btn-lg 或 .btn-sm 來套用尺寸。
 <button type="button" class="btn btn-primary btn-lg">Large button</button>
 <button type="button" class="btn btn-primary btn-sm">Small button</button>
->```
+```
 
 ### aria-hidden：
 #### [aria-hidden屬性](https://www.cnblogs.com/hellohui/p/17663823.html)
@@ -310,7 +311,7 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 >
 >但您仍需要客製 JavaScript 來切換它們的顯示狀況。
 它們的外觀、對齊以及尺寸都可以透過我們驚人的通用類別來自定義
->```
+```
 			<div class="spinner-border text-primary" role="status"> // 藍
 			  <span class="visually-hidden">Loading...</span>
 			</div>
@@ -335,16 +336,16 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 			<div class="spinner-border text-dark" role="status">	// 黑
 			  <span class="visually-hidden">Loading...</span>
 			</div>
->```
+```
 ### aria-label：
 [前端的基礎修養：aria-label](https://lepture.com/zh/2015/fe-aria-label)
 >
 >aria-label 是一個 HTML attribute，用來告訴讀屏軟件某個元素是什麼。例如一個關閉按鈕「×」，視覺上看來都能理解，但是讀屏軟件並不能正確讀出，這時就可以用 aria-label 告訴它
->```
+```
 		EX：
 			// 讀屏軟件（比如說 Voice Over）就會讀出「按鈕，關閉」
 			<button aria-label="關閉">&times;</button>
->```
+```
 ### aria-labelledby 屬性：
 [https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA/Attributes/aria-labelledby](https://developer.mozilla.org/zh-CN/docs/Web/Accessibility/ARIA/Attributes/aria-labelledby)
 
@@ -365,7 +366,7 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 >* 導覽列預設是響應式的，但也可以輕易的修改這個選項。響應式行為會使用到折疊的 JavaScript 插件。
 >* 使用 `<nav>` 元素確保親和性，或者如果使用更通用的元素，如 `<div>`，在每一個導覽列中添加 role="navigation" 為輔助技術的使用者明確標識導覽區域。
 透過設置 aria-current="page" 於當前頁面，或將 aria-current="true" 設置於群組中的當前項目來指示目前位置。
->```
+```
 		EX：
 			<!-- As a link -->
 			<nav class="navbar navbar-light bg-light">
@@ -379,7 +380,7 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 				<span class="navbar-brand mb-0 h1">Navbar</span>
 			  </div>
 			</nav>
->```
+```
 ### 導覽與頁籤 (Navs and tabs)：
 [Bootstrap標籤頁（Tab）插件(菜鳥教程)](https://www.runoob.com/bootstrap/bootstrap-tab-plugin.html)
 
@@ -390,7 +391,7 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 >基礎的 .nav 元件使用 flexbox 構建，並提供了堅實的基礎以構建所有類型的導覽元件。它包括一些樣式覆寫（為了與列表一同使用）、用於提供更大點擊範圍的連結 padding，以及基本的禁用樣式。
 >
 >基礎的 .nav 元件不包含任何 .active 狀態。以下範例包含了 active 類別，主要是為了說明這個 class 不會觸發任何特殊的樣式。如果要將啟用狀態傳遞給輔助技術，請使用 aria-current 屬性 - 為當前的頁面賦予 page 屬性，或賦予目前所指向的項目 true 屬性。
->```
+```
 		EX：
 			<ul class="nav">
 			  <li class="nav-item">
@@ -406,17 +407,17 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
 			  </li>
 			</ul>
->```
+```
 ### 表單控制 (Form controls)
 [https://bootstrap5.hexschool.com/docs/5.0/forms/form-control/](https://bootstrap5.hexschool.com/docs/5.0/forms/form-control/)
 >
 >使用自定義的樣式，尺寸，focus 狀態等為文本形式控制元件如 `<input>`、`<textarea>` 進行升級
->```
+```
 		EX：
 			<input className="form-control mt-2" type="search"
 			placeholder="Search" aria-labelledby="Search"
 			onChange={e => setSearch(e.target.value)} />
->```
+```
 ### 下拉選單 (Dropdowns)
 [https://bootstrap5.hexschool.com/docs/5.0/components/dropdowns/](https://bootstrap5.hexschool.com/docs/5.0/components/dropdowns/)
 >
@@ -426,7 +427,7 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 >
 >底下的範例是在適合的地方使用語義化標籤 `<ul> `元素，但它也可以自己決定要放什麼
 >任何單個 .btn 可以變成帶有一些標記的下拉式切換。以下是您如何使用 `<button>`元素：
->```
+```
 		EX：
 			<div class="dropdown">
 			  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -450,23 +451,23 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 				<li><a class="dropdown-item" href="#">Something else here</a></li>
 			  </ul>
 			</div>
->```
+```
 ### 文字 (Text)：
 [https://bootstrap5.hexschool.com/docs/5.0/utilities/text/](https://bootstrap5.hexschool.com/docs/5.0/utilities/text/)
 >
 >文字通用類別的文檔和示例，用於控制對齊、環繞、粗細等。
 
 [文字變換](https://bootstrap5.hexschool.com/docs/5.0/utilities/text/#text-transform)
->```
+```
 		 // 使用文字大寫字母類別將元件中的文字內容轉大寫
 		 EX：
 			<p class="text-lowercase">Lowercased text.</p>
 			<p class="text-uppercase">Uppercased text.</p>
 			<p class="text-capitalize">CapiTaliZed text.</p>
->```
+```
 
 [文字大小](https://bootstrap5.hexschool.com/docs/5.0/utilities/text/#font-size)
->```
+```
 		 // 快速的改變文字的 font-size 
 		 EX：
 			<p class="fs-1">.fs-1 text</p>
@@ -475,12 +476,12 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 			<p class="fs-4">.fs-4 text</p>
 			<p class="fs-5">.fs-5 text</p>
 			<p class="fs-6">.fs-6 text</p>
->```
+```
 
 [文字粗細和斜體](https://bootstrap5.hexschool.com/docs/5.0/utilities/text/#font-weight-and-italics)
 >
 >使用這些通用類別來快速地改變文字內容的 font-weight 或 font-style。font-style 通用類別的縮寫為 `.fst-*`， `font-weight`通用類別的縮寫為 `.fw-*`
->```
+```
 		 EX：
 			<p class="fw-bold">Bold text.</p>
 			<p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
@@ -489,12 +490,12 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 			<p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
 			<p class="fst-italic">Italic text.</p>
 			<p class="fst-normal">Text with normal font style</p>
->```
+```
 ### 文字排版 (Typography)：
 [https://bootstrap5.hexschool.com/docs/5.0/content/typography/](https://bootstrap5.hexschool.com/docs/5.0/content/typography/)
 >
 >用於 Bootstrap 文字排版的文件和範例，包括全域設定、標題、主體文本、列表和更多。
->```
+```
 		EX：
 			# 標題
 			<h1>h1. Bootstrap heading</h1>
@@ -505,7 +506,7 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 			<p class="lead">
 			  This is a lead paragraph. It stands out from regular paragraphs.
 			</p>
->```
+```
 ### 顏色 (Colors)：
 [https://bootstrap5.hexschool.com/docs/5.0/utilities/colors/](https://bootstrap5.hexschool.com/docs/5.0/utilities/colors/)
 >
@@ -515,7 +516,7 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 >
 >使用 color 通用類別為文字上色。如果要為連結上色，你可以使用 `
 .link-* helper classes`。它們具有 `:hover` and `:focus` 的狀態。
->```
+```
 		 EX：
 			<p class="text-primary">.text-primary</p>
 			<p class="text-secondary">.text-secondary</p>
@@ -530,7 +531,7 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 			<p class="text-white bg-dark">.text-white</p>
 			<p class="text-black-50">.text-black-50</p>
 			<p class="text-white-50 bg-dark">.text-white-50</p>
->```
+```
 ### 卡片 (Cards)：
 [https://bootstrap5.hexschool.com/docs/5.0/components/card/](https://bootstrap5.hexschool.com/docs/5.0/components/card/)
 >
@@ -539,7 +540,7 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 >卡片被設計成盡可能的少用一些標記和樣式，但它仍然可以提供許多的控制項和自定義。使用 flexbox 構建，它們可以更方便的對齊，並與其它的 Bootstrap 元件良好混合
 >
 [頁首和頁尾](https://bootstrap5.hexschool.com/docs/5.0/components/card/#header-and-footer)
->```
+```
 		 // 在卡片內添加選擇性的頁首和/或頁尾。
 		 // 卡片頁首的樣式可以透過在 <h*> 元素添加 .card-header 來調整。
 		 EX：
@@ -553,7 +554,7 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 				<a href="#" class="btn btn-primary">Go somewhere</a>
 			  </div>
 			</div>
->```
+```
 ### 陰影 (Shadows)：
 >使用 box-shadow 通用類別來增加或移除陰影。
 >
@@ -561,20 +562,20 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 >
 >雖然在 Bootstrap 中元件上的陰影預設被禁用，且可透過 $enable-shadows 啟用，你也可以使用我們的 box-shadow 通用類別快速增加或移除陰影。包括對 .shadow-none 和其他三個預設大小的支
 			持（有相關的變數用以對應）。
->```
+```
 		 EX：
 			<div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
 			<div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
 			<div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
 			<div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
->```
+```
 ### 背景 (Background)：
 >通過 background-color 傳達意義並添加漸層樣式。
 >
 [背景顏色](https://bootstrap5.hexschool.com/docs/5.1/utilities/background/#background-color)
 >
 >與上下文文字顏色類別相似，將元素的背景設定為任何上下文類別。背景通用類別 沒有設定 color，所以在某些情況下你需要使用 `.text-*`
->```
+```
 		 EX：
 			<div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
 			<div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
@@ -587,14 +588,14 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 			<div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
 			<div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
 			<div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
->```
+```
 ### 邊框 (Borders)：
 >使用 Border 通用類別迅速設計一個元素的 border 和 border-radius。可用於圖像、按鈕、或任何其它元素。
 >
 [Border](https://bootstrap5.hexschool.com/docs/5.0/utilities/borders/#border)
 >
 >使用 border 通用類別增加或移除一個元素的 border。選擇要四邊都使用，或是一次只用一個。
->```
+```
 		 // 增加
 		 EX：
 			<span class="border"></span>
@@ -609,12 +610,12 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 			<span class="border-end-0"></span>
 			<span class="border-bottom-0"></span>
 			<span class="border-start-0"></span>
->```
+```
 
 [邊框顏色](https://bootstrap5.hexschool.com/docs/5.0/utilities/borders/#border-color)
 >
 >透過通用類別套用邊框的主題色彩。
->```
+```
 		 EX：
 			<span class="border border-primary"></span>
 			<span class="border border-secondary"></span>
@@ -625,12 +626,12 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 			<span class="border border-light"></span>
 			<span class="border border-dark"></span>
 			<span class="border border-white"></span>
->```
+```
 
 [Border-radius](https://bootstrap5.hexschool.com/docs/5.0/utilities/borders/#border-radius)
 >
 >將元素加入至 class 可以輕鬆地替邊框增加圓角。
->```
+```
 		 EX：
 			<img src="..." class="rounded" alt="...">
 			<img src="..." class="rounded-top" alt="...">
@@ -639,7 +640,7 @@ EX：在第一行的<th>加上值為col的scope屬性，聲明他們是下面資
 			<img src="..." class="rounded-start" alt="...">
 			<img src="..." class="rounded-circle" alt="...">
 			<img src="..." class="rounded-pill" alt="...">
->```
+```
 ### Gutters：
 [https://bootstrap5.hexschool.com/docs/5.0/layout/gutters/](https://bootstrap5.hexschool.com/docs/5.0/layout/gutters/)
 >
@@ -652,7 +653,7 @@ Gutters 可以進行響應式的調整。 使用特定斷點的 gutter 類別來
 >
 [水平gutters](https://bootstrap5.hexschool.com/docs/5.0/layout/gutters/#horizontal-gutters)
 >`.gx-*` 類別可以用來控制水平 gutter 的寬度。若使用較大的 gutters 且要避免不必要的溢出，則需在 .container 或 .container-fluid 的父層使用匹配的 padding。
->>```
+```
 例如，在下方範例中我們增加了 .px-4 的 padding:
 		 EX：
 			<div class="container px-4">
@@ -665,12 +666,12 @@ Gutters 可以進行響應式的調整。 使用特定斷點的 gutter 類別來
 				</div>
 			  </div>
 			</div>
->>```
+```
 >
 [垂直gutters](https://bootstrap5.hexschool.com/docs/5.0/layout/gutters/#vertical-gutters)
 >
 >`.gy-*` 類別可以控制垂直 gutter 的寬度。與水平 gutters 相同，垂直 gutters 會導致 .row 下方溢出頁尾。如果發生這種情況，請使用 .overflow-hidden 包圍 .row 的外層:
->>```
+```
 		 EX：
 			<div class="container overflow-hidden">
 			  <div class="row gy-5">
@@ -688,13 +689,13 @@ Gutters 可以進行響應式的調整。 使用特定斷點的 gutter 類別來
 				</div>
 			  </div>
 			</div>
->>```
+```
 >
 [水平及垂直gutters](https://bootstrap5.hexschool.com/docs/5.0/layout/gutters/#horizontal--vertical-gutters)
 >
 >`.g-*` 類別可以控制水平 gutter 的寬度，下方的範例我們使用了較小的 gutter >width，因此我們不需再另外使用.overflow-hidden 包住其父層。
 >
->>```
+```
 		 EX：
 			<div class="container">
 		  <div class="row g-2">
@@ -712,7 +713,7 @@ Gutters 可以進行響應式的調整。 使用特定斷點的 gutter 類別來
 			</div>
 		  </div>
 		</div>
->>```
+```
 ### 尺寸 (Sizing)：
 [https://bootstrap5.hexschool.com/docs/5.0/utilities/sizing/](https://bootstrap5.hexschool.com/docs/5.0/utilities/sizing/)
 >
@@ -721,30 +722,30 @@ Gutters 可以進行響應式的調整。 使用特定斷點的 gutter 類別來
 [相對於父元素](https://bootstrap5.hexschool.com/docs/5.0/utilities/sizing/#relative-to-the-parent)
 >
 >寬度和高度通用類別從 _utilities.scss 中產生。預設包含 25%, 50%, 75%, 100% 和 auto 。按你的需求調整這些值，可產生不同的屬性。
->>```
+```
 		 EX：
 			<div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
 			<div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
 			<div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
 			<div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
 			<div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
->>```
+```
 >
 [相對於視窗](https://bootstrap5.hexschool.com/docs/5.0/utilities/sizing/#relative-to-the-viewport)
 >您還可以使用通用類別來設定相對於視窗的寬度和高度。
->>```
+```
 		 EX：
 			<div class="min-vw-100">Min-width 100vw</div>
 			<div class="min-vh-100">Min-height 100vh</div>
 			<div class="vw-100">Width 100vw</div>
 			<div class="vh-100">Height 100vh</div>
->>```
+```
 ### 折疊 (Collapse)：
 [https://bootstrap5.hexschool.com/docs/5.0/components/collapse/](https://bootstrap5.hexschool.com/docs/5.0/components/collapse/)
 >
 >JavaScript 的摺疊插件被用於顯示和隱藏內容。按鈕、錨點被用作為觸發器，對應到需要被切換的元素上。折疊一個元素會將它的 height 從當前的值轉換為 0。基於CSS處理動畫的方式，你不能在帶有.collapse的元素上使用padding;相反的，應該把它作為獨立的包裝元素。
 >點擊以下按鈕，透過改變 Class 來顯示及隱藏另一個元素：
->>```
+```
 		 EX：
 			<p>
 			  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -759,12 +760,12 @@ Gutters 可以進行響應式的調整。 使用特定斷點的 gutter 類別來
 				Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
 			  </div>
 			</div>
->>```
+```
 ### 表單 (Forms)	
 [https://bootstrap5.hexschool.com/docs/5.0/forms/overview/](https://bootstrap5.hexschool.com/docs/5.0/forms/overview/)
 >
 >用於創建各種表單控制樣式、排版選項和自訂元件的範例和使用指南確保在輸入框上使用正確的type屬性（例如，email用於電子郵件地址或 number 用於數字信息），以利用較新的輸入控制，如電子郵件驗證、號碼選擇等
->>```
+```
 		 EX：
 			<form method="POST" action="#">
 				<hr />
@@ -780,7 +781,7 @@ Gutters 可以進行響應式的調整。 使用特定斷點的 gutter 類別來
 					<button type="button" onClick={() => props.submitReview(starInput, reviewDescription)} className="btn btn-primary mt-3">Submit Review</button>
 				</div>
 			</form>
->>```
+```
 ### 列表群組 (List group)
 [https://bootstrap5.hexschool.com/docs/5.0/components/list-group/](https://bootstrap5.hexschool.com/docs/5.0/components/list-group/)
 >
@@ -789,7 +790,7 @@ Gutters 可以進行響應式的調整。 使用特定斷點的 gutter 類別來
 #### 連結和按鈕
 >
 >使用`<a>`或 `<button>`，並加入.list-group-item-action來創建具有hover、禁用和啟用狀態的動態列表群組。我們分離這些偽類別，以確保由非交互元素組成的列表群組（如 `<li>` 或 `<div>`）不提供點擊或觸擊。確保不要在這裡使用標準的 `.btn`。
->>```
+```
 		  EX：
 			<div class="list-group">
 			  <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
@@ -800,12 +801,12 @@ Gutters 可以進行響應式的調整。 使用特定斷點的 gutter 類別來
 			  <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
 			  <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">A disabled link item</a>
 			</div>
->>```
+```
 ### 互動視窗 (Modal)
 [https://bootstrap5.hexschool.com/docs/5.0/components/modal/](https://bootstrap5.hexschool.com/docs/5.0/components/modal/)
 >
 >使用 Bootstrap JavaScript 的互動視窗插件來增加一個對話視窗，用於用戶提示、燈箱或完整的自訂內容。
->>```
+```
 		EX：
 			// "modal fade" => 跳出互動視窗，並使背景淡化
 			// data-bs-backdrop="static" => 不特別使用則預設模式，點擊空白處即可關閉視窗，static模式則無法關閉
@@ -833,12 +834,12 @@ Gutters 可以進行響應式的調整。 使用特定斷點的 gutter 類別來
 				</div>
 			  </div>
 			</div>
->>```
+```
 ### 警報 (Alerts)
 [https://bootstrap5.hexschool.com/docs/5.0/components/alerts/](https://bootstrap5.hexschool.com/docs/5.0/components/alerts/)
 >
 >使用少量可用及彈性的警報訊息為使用者操作提供上下文的內容回饋。
->>```	
+```	
 		EX： 
 		// 警報適用於任何長度的文本，以及可選的關閉按鈕。為了呈現正確的樣式，請必需使用 8 個內文樣式類別中的其中一個
 			<div class="alert alert-primary" role="alert">
@@ -865,15 +866,15 @@ Gutters 可以進行響應式的調整。 使用特定斷點的 gutter 類別來
 			<div class="alert alert-dark" role="alert">
 			  A simple dark alert—check it out!
 			</div>
->>```
+```
 ### script
 [[HTML] script async Attribute](https://www.w3schools.com/tags/att_script_async.asp)
 >
 [[HTML] script中defer跟async是什麼?](https://realdennis.medium.com/html-script-%E4%B8%ADdefer%E8%B7%9Fasync%E6%98%AF%E4%BB%80%E9%BA%BC-1166ee88d18)
 >
 >[HTML] script 元素能嵌入或引用要執行的程式碼。最常見的用途是嵌入或引用 JavaScript 程式碼。script 元素也能執行其他語言
->>```
+```
 		 EX：
 			<script src="myscripts.js"></script>
 			<script src="https://js.stripe.com/v3" async></script>
->>```
+```
